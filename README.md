@@ -37,8 +37,9 @@ Some input data has been omitted due to GitHub LFS limits; static development im
   - `disposable_income`: Disposable income [1]
   - `discretionary_income`: Discretionary income [1]
 - `net_wealth`: Net wealth [1]
-- `lfpr_f/m`: Labourforce Participation Rate (Male/Female)
-- Employment: (stratified by sex)
+- `lfpr_f/m`: Labourforce Participation Rate (Male/Female) [5]
+- `labourforce`: Total labourforce (aggregate) [5]
+- Employment: (stratified by sex) [6]
   - `agriculture_f/m`: Agriculture
   - `manufacturing_f/m`: Manufacturing and mining
   - `services_f/m`: Services
@@ -62,6 +63,8 @@ This includes both 5-arcmin. rasters and national/regional-level aggregates.
 2. Calculated based on Nordhaus, Maddison, Gapminder, SEDAC, Kummu et al., and others. Composite series disaggregated using Regularised Least Squares on land use/demographic covariates (HYDE/Velkscala).
 3. Disaggregated from the GINI Project Database, Gapminder/World Inequality Database, SubNGini, and others.
 4. Modelled based on WorldPop, UNWPP, HMD, and Clio-Infra, then backcalculated using multinomial logit. Migration rasters calculated based on additional research from Niva et al. Emergent modelling for Neolithic Demographic Transition.
+5. Based on ILOSTAT/Olivetti/World Bank data (Regularised Least Squares).
+6. Based on ILOSTAT/Olivetti data (Multinomial logit).
 
 **Data & Papers.**
 
