@@ -37,6 +37,13 @@ Some input data has been omitted due to GitHub LFS limits; static development im
   - `disposable_income`: Disposable income [1]
   - `discretionary_income`: Discretionary income [1]
 - `net_wealth`: Net wealth [1]
+- `lfpr_f/m`: Labourforce Participation Rate (Male/Female)
+- Employment: (stratified by sex)
+  - `agriculture_f/m`: Agriculture
+  - `manufacturing_f/m`: Manufacturing and mining
+  - `services_f/m`: Services
+  - `informal_labour_f/m`: Informal Labour
+  - `not_in_work_f/m`: Not in work or employment
 - Population pyramids: [4]
   - `f/m_00`: 0-1 years of age, female/male cohorts
   - `f/m_01`: 1-5 years of age, female/male cohorts
@@ -47,7 +54,7 @@ Some input data has been omitted due to GitHub LFS limits; static development im
   - `male_deaths`: Crude male deaths, aggregate
   - `male_net_migration`: Net migration, male, aggregate
   - `net_migration`: Net migration, both genders
-  - Life tables are available by ISO3-geocode from 1750-2025.
+  - Life tables are available by ISO3-geocode from 1750-2025. 
 
 This includes both 5-arcmin. rasters and national/regional-level aggregates.
 
