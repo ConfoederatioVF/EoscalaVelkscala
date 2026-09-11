@@ -40,11 +40,11 @@ Some input data has been omitted due to GitHub LFS limits; static development im
 - `lfpr_f/m`: Labourforce Participation Rate (Male/Female) [5]
 - `labourforce`: Total labourforce (aggregate) [5]
 - Employment: (stratified by sex) [6]
-  - `agriculture_f/m`: Agriculture
-  - `manufacturing_f/m`: Manufacturing and mining
+  - `agriculture_f/m/t`: Agriculture
+  - `manufacturing_f/m/t`: Manufacturing and mining
   - `services_f/m`: Services
-  - `informal_labour_f/m`: Informal Labour
-  - `not_in_work_f/m`: Not in work or employment
+  - `informal_labour_f/m/t`: Informal Labour
+  - `not_in_work_f/m/t`: Not in work or employment
 - Population pyramids: [4]
   - `f/m_00`: 0-1 years of age, female/male cohorts
   - `f/m_01`: 1-5 years of age, female/male cohorts
