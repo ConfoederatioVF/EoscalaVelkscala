@@ -49,12 +49,12 @@ Some input data has been omitted due to GitHub LFS limits; static development im
   - `f/m_00`: 0-1 years of age, female/male cohorts
   - `f/m_01`: 1-5 years of age, female/male cohorts
   - `f/m_05-80`: 5-year incremental female/male age cohorts, ending cohort is `80+`.
-  - `births`: Crude births, aggregate
-  - `female_deaths`: Crude female deaths, aggregate
-  - `female_net_migration`: Net migration, female, aggregate
-  - `male_deaths`: Crude male deaths, aggregate
-  - `male_net_migration`: Net migration, male, aggregate
-  - `net_migration`: Net migration, both genders
+  - `births`: Crude births, aggregate [7]
+  - `female_deaths`: Crude female deaths, aggregate [7]
+  - `female_net_migration`: Net migration, female, aggregate [7]
+  - `male_deaths`: Crude male deaths, aggregate [7]
+  - `male_net_migration`: Net migration, male, aggregate [7]
+  - `net_migration`: Net migration, both genders [7]
   - Life tables are available by ISO3-geocode from 1750-2025. 
 
 This includes both 5-arcmin. rasters and national/regional-level aggregates.
@@ -65,6 +65,7 @@ This includes both 5-arcmin. rasters and national/regional-level aggregates.
 4. Modelled based on WorldPop, UNWPP, HMD, and Clio-Infra, then backcalculated using multinomial logit. Migration rasters calculated based on additional research from Niva et al. Emergent modelling for Neolithic Demographic Transition.
 5. Based on ILOSTAT/Olivetti/World Bank data (Regularised Least Squares).
 6. Based on ILOSTAT/Olivetti data (Multinomial logit).
+7. Vital statistics based on Euler-Lotka normalisation with PAVA as an abstraction for Gompertz, Makeham, and Siler modelling. Migrations calculated as residuals.
 
 **Data & Papers.**
 
