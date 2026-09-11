@@ -167,7 +167,7 @@ ALCC data was geometrically averaged over the domain of KK10/LUH2, and was used 
 - `rangeland`: Rangeland Area (km^2/cell)
 - `rf_norice`: Rainfed Non-Rice Cropland (km^2/cell)
 - `rf_rice`: Rice Cropland (km^2/cell)
-- `shifting`: Manual Weight Changes (HYDE3.3)
+- `shifting`: Shifting Cultivation (km^2/cell)
 - `tot_irri`: Irrigated Area (km^2/cell)
 - `tot_rainfed`: Rainfed Non-Rice Cropland (km^2/cell)
 - `tot_rice`: Rice Cropland (km^2/cell)
