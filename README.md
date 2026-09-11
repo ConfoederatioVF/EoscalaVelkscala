@@ -38,7 +38,7 @@ Some input data has been omitted due to GitHub LFS limits; static development im
   - `discretionary_income`: Discretionary income [1]
 - `net_wealth`: Net wealth [1]
 - `lfpr_f/m`: Labourforce Participation Rate (Male/Female) [5]
-- `labourforce`: Total labourforce (aggregate) [5]
+- `active_labourforce_f/m/total`: Total labourforce (aggregate) [5]
 - Employment: (stratified by sex) [6]
   - `agriculture_f/m/t`: Agriculture
   - `manufacturing_f/m/t`: Manufacturing and mining
