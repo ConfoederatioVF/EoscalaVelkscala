@@ -21,7 +21,7 @@
 
 ## Abstract:
 
-Eoscala/Velkscala are twin projects focusing on the global historical modelling of demographic and economic data overtime at a 5-arcminute resolution (4320x2160, WGS84 Equirectangular). These rasters are currently provided at 1000-year intervals from 10000BC to 1AD, at 100-year intervals from 1AD to 1700AD, at 10-year intervals from 1700AD to 1950AD, and at 1-year intervals from 1950AD to 2023AD. Eoscala's data is reliable to 2022AD, and Velkscala's data to 2023AD.
+Eoscala/Velkscala are twin projects focusing on the global historical modelling of demographic and economic data overtime at a 5-arcminute resolution (4320x2160, WGS84 Equirectangular). These rasters are currently provided at 1000-year intervals from 10000BC to 1AD, at 100-year intervals from 1AD to 1700AD, at 10-year intervals from 1700AD to 1950AD, and at 1-year intervals from 1950AD to 2025AD.
 
 This database is subject to future routine updates to improve model and data accuracy, as well as to expand the scope of available gridded raster data. Make sure to read each release paper for the full methodology. Some input data has been omitted due to GitHub LFS limits; static development images are available upon request. 
 
