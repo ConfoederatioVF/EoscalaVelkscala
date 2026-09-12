@@ -29,6 +29,8 @@ This database is subject to future routine updates to improve model and data acc
 
 Some input data has been omitted due to GitHub LFS limits; static development images are available upon request. If you require access to the following rasters, please check the relevant links listed below.
 > [Eoscala 1.5 (33GB)](https://datavault.confoederatio.org/s/2Kytdej7ABpw4rr) | [Velkscala 1.0 (33.1GB)](https://datavault.confoederatio.org/s/44Pfgt7ya8wE77b)
+>
+> **Note.** These are pre-release rasters, we are still working on the relevant webviewers and detailed reports to release these variables officially.
 
 - `GDP_nominal`: GDP (nominal) [2]
 - `GDP_pc`: GDP per capita (nominal) [2]
