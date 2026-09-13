@@ -187,5 +187,21 @@
         }
       }
     }
+  },
+  wealth_income: {
+    name: "Wealth/Income",
+    filepath: "${h3}/wealth_income/1.${indicator}/${indicator}_${year}.png",
+    unit: "FY$2000 per household",
+    
+    variable_selectors: {
+      indicator: {
+        name: "Indicator",
+        
+        net_wealth: { name: "Net Wealth", discounted: true },
+        net_income: { name: "Net Income", discounted: true },
+        disposable_income: { name: "Disposable Income", discounted: true },
+        discretionary_income: { name: "Discretionary Income", discounted: true }
+      }
+    }
   }
 }
