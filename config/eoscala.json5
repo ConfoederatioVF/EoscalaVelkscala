@@ -74,22 +74,27 @@
       }
     }
   },
-  lfpr_female: {
-    name: "Labourforce Participation Rate (LFPR, Female)",
+  lfpr: {
+    name: "Labourforce Participation Rate (LFPR)",
     unit: "%",
-    filepath: "${h2}LFPR_OLS/3.lfpr_rates/lfpr_f_${year}.png",
-    legend: {
-      colourscheme: "ylorrd",
-      type: "linear"
-    }
-  },
-  lfpr_male: {
-    name: "Labourforce Participation Rate (LFPR, Male)",
-    unit: "%",
-    filepath: "${h2}LFPR_OLS/3.lfpr_rates/lfpr_m_${year}.png",
-    legend: {
-      colourscheme: "ylgnbu",
-      type: "linear"
+
+    lfpr_female: {
+      name: "Labourforce Participation Rate (LFPR, Female)",
+      unit: "%",
+      filepath: "${h2}LFPR_OLS/3.lfpr_rates/lfpr_f_${year}.png",
+      legend: {
+        colourscheme: "ylorrd",
+        type: "linear"
+      }
+    },
+    lfpr_male: {
+      name: "Labourforce Participation Rate (LFPR, Male)",
+      unit: "%",
+      filepath: "${h2}LFPR_OLS/3.lfpr_rates/lfpr_m_${year}.png",
+      legend: {
+        colourscheme: "ylgnbu",
+        type: "linear"
+      }
     }
   },
   professions_percentage: {

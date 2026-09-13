@@ -7,7 +7,10 @@
     h4: "${nwm}/histmap/4.data_exports/",
     h5: "${nwm}/histmap/5.data_visualisation/",
     
-    age_sex: "${h3}/age_sex/4.composite_cohorts/"
+    age_sex: "${h3}/age_sex/4.composite_cohorts/",
+    vitals: "${h2}/births_deaths_OLS/",
+    
+    stad: "${h1}/population_Stadester_Legacy/"
   },
   
   age_sex: {
@@ -50,5 +53,76 @@
       "80": { name: "80+, Seniors"}
     }
   },
+  births: {
+    name: "Births",
+    filepath: "${vitals}/3.crude_births/births_${year}.png",
+    legend: { colourscheme: "prgn" }
+  },
+  deaths: {
+    name: "Deaths",
+    filepath: "${vitals}/3.${gender}_crude_deaths/${gender}_deaths_{year}.png",
+    
+    variable_selectors: {
+      gender: {
+        name: "Gender",
+        
+        female: {
+          name: "Female",
+          legend: { colourscheme: "prgn", inverted: true }
+        },
+        male: {
+          name: "Male",
+          legend: { colourscheme: "rdgy", inverted: true }
+        }
+      }
+    }
+  },
+  migration_gender: {
+    name: "Migration (Gender)",
+    filepath: "${vitals}/4.${gender}_net_migration/${gender}_net_migration_{year}.png",
+    
+    variable_selectors: {
+      gender: {
+        name: "Gender",
+        
+        female: {
+          name: "Female",
+          legend: { colourscheme: "rdgy", inverted: true }
+        },
+        male: {
+          name: "Male",
+          legend: { colourscheme: "prgn", inverted: true }
+        }
+      }
+    }
+  },
+  net_migration: {
+    name: "Net Migration",
+    filepath: "${vitals}/4.net_migration/net_migration_${year}.png",
+    legend: { colourscheme: "rdylgn" }
+  },
   
+  population_density: {
+    name: "Population Density (ihb/km^2)",
+    filepath: "${stad}/stadester_density_rasters/stadester_density_${year}.png",
+    legend: { colourscheme: "reds" }
+  },
+  population_total: {
+    name: "Population (Total)",
+    encoding: "int32",
+    filepath: "${stad}/stadester_population_rasters/stadester_population_${year}.png",
+    legend: { colourscheme: "viridis" }
+  },
+  population_rural: {
+    name: "Population (Rural)",
+    encoding: "int32",
+    filepath: "${stad}/population_rural_rasters/stadester_rural_{year}.png",
+    legend: { colourscheme: "greens" }
+  },
+  population_urban: {
+    name: "Population (Urban)",
+    encoding: "int32",
+    filepath: "${stad}/population_urban_rasters/stadester_urban_{year}.png",
+    legend: { colourscheme: "blues" }
+  }
 }
