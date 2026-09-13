@@ -116,13 +116,13 @@
   population_rural: {
     name: "Population (Rural)",
     encoding: "int32",
-    filepath: "${stad}/population_rural_rasters/stadester_rural_{year}.png",
+    filepath: "${stad}/stadester_rural_rasters/stadester_rural_{year}.png",
     legend: { colourscheme: "greens" }
   },
   population_urban: {
     name: "Population (Urban)",
     encoding: "int32",
-    filepath: "${stad}/population_urban_rasters/stadester_urban_{year}.png",
+    filepath: "${stad}/stadester_urban_rasters/stadester_urban_{year}.png",
     legend: { colourscheme: "blues" }
   }
 }

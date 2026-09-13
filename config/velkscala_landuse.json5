@@ -1,0 +1,74 @@
+{
+  root_folders: {
+    nwm: "D:/Project 1509 - SVEA/histmap/", //Determines root folder on the server device
+    h1: "${nwm}/histmap/1.data_raw/",
+    h2: "${nwm}/histmap/2.data_cleaning/",
+    h3: "${nwm}/histmap/3.data_transform/",
+    h4: "${nwm}/histmap/4.data_exports/",
+    h5: "${nwm}/histmap/5.data_visualisation/",
+
+    alcc: "${h2}/population_KK10LUH2/rasters_KK10LUH2/",
+    hyde: "${h2}/landuse_HYDE/rasters/"
+  },
+  expressions: {
+    hs: "${(year < 0) ? 'BC' : 'AD'}_number" //HYDE suffix
+  },
+  
+  alcc: {
+    name: "Anthropogenic Land Cover Change (ALCC)",
+    filepath: "${alcc}/KK10LUH2_${year}.png",
+    legend: { colourscheme: "greys", type: "linear" }
+  },
+  conv_rangeland: {
+    name: "Converted Rangeland (km^2)",
+    filepath: "${hyde}/conv_rangeland${year}${hs}.png",
+  },
+  cropland: {
+    name: "Cropland (km^2)",
+    filepath: "${hyde}/cropland${year}${hs}.png",
+  },
+  grazing: {
+    name: "Grazing (km^2)",
+    filepath: "${hyde}/grazing${year}${hs}.png",
+  },
+  ir_norice: {
+    name: "Irrigated Non-Rice Cropland (km^2)",
+    filepath: "${hyde}/ir_norice${year}${hs}.png",
+  },
+  ir_rice: {
+    name: "Irrigated Rice Cropland (km^2)",
+    filepath: "${hyde}/ir_rice${year}${hs}.png",
+  },
+  pasture: {
+    name: "Pasture (km^2)",
+    filepath: "${hyde}/pasture${year}${hs}.png",
+  },
+  rangeland: {
+    name: "Rangeland (km^2)",
+    filepath: "${hyde}/rangeland${year}${hs}.png",
+  },
+  rf_norice: {
+    name: "Rainfed Non-Rice Cropland (km^2)",
+    filepath: "${hyde}/rf_norice${year}${hs}.png",
+  },
+  rf_rice: {
+    name: "Rainfed Rice Cropland (km^2)",
+    filepath: "${hyde}/rf_rice${year}${hs}.png",
+  },
+  shifting: {
+    name: "Shifting Cultivation (km^2)",
+    filepath: "${hyde}/shifting${year}${hs}.png",
+  },
+  tot_irri: {
+    name: "Total Irrigated Area (km^2)",
+    filepath: "${hyde}/tot_irri${year}${hs}.png",
+  },
+  tot_rainfed: {
+    name: "Total Rainfed Area (km^2)",
+    filepath: "${hyde}/tot_rainfed${year}${hs}.png",
+  },
+  tot_rice: {
+    name: "Total Rice Cultivation (km^2)",
+    filepath: "${hyde}/tot_rice${year}${hs}.png",
+  }
+}
