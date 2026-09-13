@@ -1,0 +1,191 @@
+{
+  root_folders: {
+    nwm: "D:/Project 1509 - SVEA/histmap/", //Determines root folder on the server device
+    h1: "${nwm}/histmap/1.data_raw/",
+    h2: "${nwm}/histmap/2.data_cleaning/",
+    h3: "${nwm}/histmap/3.data_transform/",
+    h4: "${nwm}/histmap/4.data_exports/",
+    h5: "${nwm}/histmap/5.data_visualisation/",
+    
+    prof_per: "${h3}/professions/3.percentages/",
+    prof_tot: "${h3}/professions/4.aggregates/"
+  },
+  
+  GDP_nominal: {
+    name: "GDP (Nominal)",
+    unit: "FY$2000",
+    filepath: "${h3}GDP_pc/7.scaled_to_national/GDP_${year}.png",
+    legend: {
+      colourscheme: "rdylgn"
+    }
+  },
+  GDP_nominal_pc: {
+    name: "GDP per capita (Nominal)",
+    unit: "FY$2000",
+    filepath: "${h3}GDP_pc/8.GDP_nominal_pc_rasters/GDP_pc_${year}.png",
+    legend: {
+      colourscheme: "turbo"
+    }
+  },
+  GDP_PPP: {
+    name: "GDP (PPP)",
+    unit: "FY$2000",
+    filepath: "${h3}GDP_PPP_pc/7.scaled_to_national/GDP_PPP_${year}.png",
+    legend: {
+      colourscheme: "rdylgn"
+    }
+  },
+  GDP_PPP_pc: {
+    name: "GDP per capita (PPP)",
+    unit: "FY$2000",
+    filepath: "${h3}GDP_PPP_pc/8.GDP_PPP_pc_rasters/GDP_PPP_pc_${year}.png",
+    legend: {
+      colourscheme: "turbo"
+    }
+  },
+  gini: {
+    name: "Gini (Composite)",
+    unit: "%",
+    filepath: "${h2}gini_Eoscala/4.output_rasters/gini_${year}.png",
+    legend: {
+      colourscheme: "cividis",
+      type: "linear"
+    }
+  },
+  labourforce_total: {
+    name: "Labourforce (Total)",
+    filepath: "${h2}LFPR_OLS/4.active_labourforce/labourforce_t_${year}.png",
+    legend: {
+      colourscheme: "plasma"
+    },
+    
+    labourforce_female: {
+      name: "Labourforce (Female)",
+      filepath: "${h2}LFPR_OLS/4.active_labourforce/labourforce_f_${year}.png",
+      legend: {
+        colourscheme: "reds"
+      }
+    },
+    labourforce_male: {
+      name: "Labourforce (Male)",
+      filepath: "${h2}LFPR_OLS/4.active_labourforce/labourforce_m_${year}.png",
+      legend: {
+        colourscheme: "blues"
+      }
+    }
+  },
+  lfpr_female: {
+    name: "Labourforce Participation Rate (LFPR, Female)",
+    unit: "%",
+    filepath: "${h2}LFPR_OLS/3.lfpr_rates/lfpr_f_${year}.png",
+    legend: {
+      colourscheme: "ylorrd",
+      type: "linear"
+    }
+  },
+  lfpr_male: {
+    name: "Labourforce Participation Rate (LFPR, Male)",
+    unit: "%",
+    filepath: "${h2}LFPR_OLS/3.lfpr_rates/lfpr_m_${year}.png",
+    legend: {
+      colourscheme: "ylgnbu",
+      type: "linear"
+    }
+  },
+  professions_percentage: {
+    name: "Professions (%)",
+    unit: "%",
+    filepath: "${prof_per}/${profession}_${gender}_${year}.png",
+    legend: {
+      type: "linear"
+    },
+    
+    variable_selectors: { //There should also be an option to enable all variable selectors
+      gender: {
+        name: "Gender",
+        
+        f: {
+          name: "Female"
+        },
+        m: {
+          name: "Male"
+        },
+        t: {
+          name: "Total",
+          discounted: true, //Unique category; do not double dip
+        }
+      },
+      profession: {
+        name: "Occupation",
+        
+        agriculture: {
+          name: "Agriculture",
+          legend: { colourscheme: "brbg" }
+        },
+        informal_labour: {
+          name: "Informal Labour",
+          legend: { colourscheme: "cividis" }
+        },
+        manufacturing: {
+          name: "Manufacturing",
+          legend: { colourscheme: "viridis" }
+        },
+        not_in_work: {
+          name: "Not in Work",
+          discounted: true,
+          legend: { colourscheme: "rdylgn", inverted: true }
+        },
+        services: {
+          name: "Services",
+          legend: { colourscheme: "greens" }
+        }
+      }
+    }
+  },
+  professions_total: {
+    name: "Professions (Total)",
+    filepath: "${prof_per}/${profession}_${gender}_${year}.png",
+
+    variable_selectors: { //There should also be an option to enable all variable selectors
+      gender: {
+        name: "Gender",
+        
+        f: {
+          name: "Female"
+        },
+        m: {
+          name: "Male"
+        },
+        t: {
+          name: "Total",
+          discounted: true, //Unique category; do not double dip
+        }
+      },
+      profession: {
+        name: "Occupation",
+        
+        agriculture: {
+          name: "Agriculture",
+          legend: { colourscheme: "brbg" }
+        },
+        informal_labour: {
+          name: "Informal Labour",
+          legend: { colourscheme: "cividis" }
+        },
+        manufacturing: {
+          name: "Manufacturing",
+          legend: { colourscheme: "viridis" }
+        },
+        not_in_work: {
+          name: "Not in Work",
+          discounted: true,
+          legend: { colourscheme: "rdylgn", inverted: true }
+        },
+        services: {
+          name: "Services",
+          legend: { colourscheme: "greens" }
+        }
+      }
+    }
+  }
+}
