@@ -1,4 +1,9 @@
 {
+  name: "Velkscala (Land Use)",
+  can_be_uninhabited: true,
+  expressions: {
+    hs: "${(year < 0) ? 'BC' : 'AD'}_number" //HYDE suffix
+  },
   root_folders: {
     nwm: "D:/Project 1509 - SVEA/histmap/", //Determines root folder on the server device
     h1: "${nwm}/histmap/1.data_raw/",
@@ -6,18 +11,16 @@
     h3: "${nwm}/histmap/3.data_transform/",
     h4: "${nwm}/histmap/4.data_exports/",
     h5: "${nwm}/histmap/5.data_visualisation/",
-
     alcc: "${h2}/population_KK10LUH2/rasters_KK10LUH2/",
     hyde: "${h2}/landuse_HYDE/rasters/"
   },
-  expressions: {
-    hs: "${(year < 0) ? 'BC' : 'AD'}_number" //HYDE suffix
-  },
-  
   alcc: {
     name: "Anthropogenic Land Cover Change (ALCC)",
     filepath: "${alcc}/KK10LUH2_${year}.png",
-    legend: { colourscheme: "greys", type: "linear" }
+    legend: {
+      colourscheme: "greys",
+      type: "linear"
+    }
   },
   conv_rangeland: {
     name: "Converted Rangeland (km^2)",

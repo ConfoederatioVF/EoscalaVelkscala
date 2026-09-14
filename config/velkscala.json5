@@ -1,4 +1,5 @@
 {
+  name: "Velkscala (Demographics)",
   root_folders: {
     nwm: "D:/Project 1509 - SVEA/histmap/", //Determines root folder on the server device
     h1: "${nwm}/histmap/1.data_raw/",
@@ -6,73 +7,113 @@
     h3: "${nwm}/histmap/3.data_transform/",
     h4: "${nwm}/histmap/4.data_exports/",
     h5: "${nwm}/histmap/5.data_visualisation/",
-    
     age_sex: "${h3}/age_sex/4.composite_cohorts/",
     vitals: "${h2}/births_deaths_OLS/",
-    
     stad: "${h1}/population_Stadester_Legacy/"
   },
-  
   age_sex: {
     name: "Age/Sex (Total)",
     filepath: "${age_sex}/${gender}_${age}_${year}.png",
     type: "raster.age_sex", //This needs to be displayed as a population pyramid in tooltips/raster analysis somehow
-    
     gender: {
       name: "Gender",
-      
       f: {
         name: "Female",
-        legend: { colourscheme: "reds" }
+        legend: {
+          colourscheme: "reds"
+        }
       },
       m: {
         name: "Male",
-        legend: { colourscheme: "blues" }
+        legend: {
+          colourscheme: "blues"
+        }
       }
     },
     age: {
       name: "Age",
-      
-      "00": { name: "0-1yo, Infants" },
-      "01": { name: "1-5yo" },
-      "05": { name: "5-10yo"},
-      "10": { name: "10-15yo" },
-      "15": { name: "15-20yo" },
-      "20": { name: "20-25yo" },
-      "25": { name: "25-30yo" },
-      "30": { name: "30-35yo" },
-      "35": { name: "35-40yo" },
-      "40": { name: "40-45yo" },
-      "45": { name: "45-50yo" },
-      "50": { name: "50-55yo" },
-      "55": { name: "55-60yo" },
-      "60": { name: "60-65yo" },
-      "65": { name: "65-70yo" },
-      "70": { name: "70-75yo" },
-      "75": { name: "75-80yo" },
-      "80": { name: "80+, Seniors"}
+      "00": {
+        name: "0-1yo, Infants"
+      },
+      "01": {
+        name: "1-5yo"
+      },
+      "05": {
+        name: "5-10yo"
+      },
+      "10": {
+        name: "10-15yo"
+      },
+      "15": {
+        name: "15-20yo"
+      },
+      "20": {
+        name: "20-25yo"
+      },
+      "25": {
+        name: "25-30yo"
+      },
+      "30": {
+        name: "30-35yo"
+      },
+      "35": {
+        name: "35-40yo"
+      },
+      "40": {
+        name: "40-45yo"
+      },
+      "45": {
+        name: "45-50yo"
+      },
+      "50": {
+        name: "50-55yo"
+      },
+      "55": {
+        name: "55-60yo"
+      },
+      "60": {
+        name: "60-65yo"
+      },
+      "65": {
+        name: "65-70yo"
+      },
+      "70": {
+        name: "70-75yo"
+      },
+      "75": {
+        name: "75-80yo"
+      },
+      "80": {
+        name: "80+, Seniors"
+      }
     }
   },
   births: {
     name: "Births",
     filepath: "${vitals}/3.crude_births/births_${year}.png",
-    legend: { colourscheme: "prgn" }
+    legend: {
+      colourscheme: "prgn"
+    }
   },
   deaths: {
     name: "Deaths",
     filepath: "${vitals}/3.${gender}_crude_deaths/${gender}_deaths_{year}.png",
-    
     variable_selectors: {
       gender: {
         name: "Gender",
-        
         female: {
           name: "Female",
-          legend: { colourscheme: "prgn", inverted: true }
+          legend: {
+            colourscheme: "prgn",
+            inverted: true
+          }
         },
         male: {
           name: "Male",
-          legend: { colourscheme: "rdgy", inverted: true }
+          legend: {
+            colourscheme: "rdgy",
+            inverted: true
+          }
         }
       }
     }
@@ -80,18 +121,22 @@
   migration_gender: {
     name: "Migration (Gender)",
     filepath: "${vitals}/4.${gender}_net_migration/${gender}_net_migration_{year}.png",
-    
     variable_selectors: {
       gender: {
         name: "Gender",
-        
         female: {
           name: "Female",
-          legend: { colourscheme: "rdgy", inverted: true }
+          legend: {
+            colourscheme: "rdgy",
+            inverted: true
+          }
         },
         male: {
           name: "Male",
-          legend: { colourscheme: "prgn", inverted: true }
+          legend: {
+            colourscheme: "prgn",
+            inverted: true
+          }
         }
       }
     }
@@ -99,30 +144,39 @@
   net_migration: {
     name: "Net Migration",
     filepath: "${vitals}/4.net_migration/net_migration_${year}.png",
-    legend: { colourscheme: "rdylgn" }
+    legend: {
+      colourscheme: "rdylgn"
+    }
   },
-  
   population_density: {
     name: "Population Density (ihb/km^2)",
     filepath: "${stad}/stadester_density_rasters/stadester_density_${year}.png",
-    legend: { colourscheme: "reds" }
+    legend: {
+      colourscheme: "reds"
+    }
   },
   population_total: {
     name: "Population (Total)",
     encoding: "int32",
     filepath: "${stad}/stadester_population_rasters/stadester_population_${year}.png",
-    legend: { colourscheme: "viridis" }
+    legend: {
+      colourscheme: "viridis"
+    }
   },
   population_rural: {
     name: "Population (Rural)",
     encoding: "int32",
     filepath: "${stad}/stadester_rural_rasters/stadester_rural_{year}.png",
-    legend: { colourscheme: "greens" }
+    legend: {
+      colourscheme: "greens"
+    }
   },
   population_urban: {
     name: "Population (Urban)",
     encoding: "int32",
     filepath: "${stad}/stadester_urban_rasters/stadester_urban_{year}.png",
-    legend: { colourscheme: "blues" }
+    legend: {
+      colourscheme: "blues"
+    }
   }
 }
