@@ -26,66 +26,118 @@
   conv_rangeland: {
     name: "Converted Rangeland (km^2)",
     filepath: "${hyde}/conv_rangeland${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "inferno",
+      type: "linear"
+    }
   },
   cropland: {
     name: "Cropland (km^2)",
     filepath: "${hyde}/cropland${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "rdylgn",
+      type: "linear"
+    }
   },
   grazing: {
     name: "Grazing (km^2)",
     filepath: "${hyde}/grazing${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "greens",
+      type: "linear"
+    }
   },
   ir_norice: {
     name: "Irrigated Non-Rice Cropland (km^2)",
     filepath: "${hyde}/ir_norice${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "spectral",
+      type: "linear"
+    }
   },
   ir_rice: {
     name: "Irrigated Rice Cropland (km^2)",
     filepath: "${hyde}/ir_rice${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "spectral",
+      type: "linear"
+    }
   },
   pasture: {
     name: "Pasture (km^2)",
     filepath: "${hyde}/pasture${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "piyg",
+      type: "linear"
+    }
   },
   rangeland: {
     name: "Rangeland (km^2)",
     filepath: "${hyde}/rangeland${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "orrd",
+      type: "linear"
+    }
   },
   rf_norice: {
     name: "Rainfed Non-Rice Cropland (km^2)",
     filepath: "${hyde}/rf_norice${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "oranges",
+      type: "linear"
+    }
   },
   rf_rice: {
     name: "Rainfed Rice Cropland (km^2)",
     filepath: "${hyde}/rf_rice${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "greens",
+      type: "linear"
+    }
   },
   shifting: {
     name: "Shifting Cultivation (km^2)",
     filepath: "${hyde}/shifting${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "rdgy",
+      type: "linear"
+    }
   },
   tot_irri: {
     name: "Total Irrigated Area (km^2)",
     filepath: "${hyde}/tot_irri${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "pubugn",
+      type: "linear"
+    }
   },
   tot_rainfed: {
     name: "Total Rainfed Area (km^2)",
     filepath: "${hyde}/tot_rainfed${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "blues",
+      type: "linear"
+    }
   },
   tot_rice: {
     name: "Total Rice Cultivation (km^2)",
     filepath: "${hyde}/tot_rice${year}${hs}.png",
-    unit: "km^2/cell"
+    unit: "km^2/cell",
+    legend: {
+      colourscheme: "greens",
+      type: "linear"
+    }
   }
 }
