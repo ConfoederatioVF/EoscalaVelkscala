@@ -17,6 +17,7 @@
   alcc: {
     name: "Anthropogenic Land Cover Change (ALCC)",
     filepath: "${alcc}/KK10LUH2_${year}.png",
+    unit: "km^2/cell",
     legend: {
       colourscheme: "greys",
       type: "linear"
@@ -25,53 +26,66 @@
   conv_rangeland: {
     name: "Converted Rangeland (km^2)",
     filepath: "${hyde}/conv_rangeland${year}${hs}.png",
+    unit: "km^2/cell"
   },
   cropland: {
     name: "Cropland (km^2)",
     filepath: "${hyde}/cropland${year}${hs}.png",
+    unit: "km^2/cell"
   },
   grazing: {
     name: "Grazing (km^2)",
     filepath: "${hyde}/grazing${year}${hs}.png",
+    unit: "km^2/cell"
   },
   ir_norice: {
     name: "Irrigated Non-Rice Cropland (km^2)",
     filepath: "${hyde}/ir_norice${year}${hs}.png",
+    unit: "km^2/cell"
   },
   ir_rice: {
     name: "Irrigated Rice Cropland (km^2)",
     filepath: "${hyde}/ir_rice${year}${hs}.png",
+    unit: "km^2/cell"
   },
   pasture: {
     name: "Pasture (km^2)",
     filepath: "${hyde}/pasture${year}${hs}.png",
+    unit: "km^2/cell"
   },
   rangeland: {
     name: "Rangeland (km^2)",
     filepath: "${hyde}/rangeland${year}${hs}.png",
+    unit: "km^2/cell"
   },
   rf_norice: {
     name: "Rainfed Non-Rice Cropland (km^2)",
     filepath: "${hyde}/rf_norice${year}${hs}.png",
+    unit: "km^2/cell"
   },
   rf_rice: {
     name: "Rainfed Rice Cropland (km^2)",
     filepath: "${hyde}/rf_rice${year}${hs}.png",
+    unit: "km^2/cell"
   },
   shifting: {
     name: "Shifting Cultivation (km^2)",
     filepath: "${hyde}/shifting${year}${hs}.png",
+    unit: "km^2/cell"
   },
   tot_irri: {
     name: "Total Irrigated Area (km^2)",
     filepath: "${hyde}/tot_irri${year}${hs}.png",
+    unit: "km^2/cell"
   },
   tot_rainfed: {
     name: "Total Rainfed Area (km^2)",
     filepath: "${hyde}/tot_rainfed${year}${hs}.png",
+    unit: "km^2/cell"
   },
   tot_rice: {
     name: "Total Rice Cultivation (km^2)",
     filepath: "${hyde}/tot_rice${year}${hs}.png",
+    unit: "km^2/cell"
   }
 }

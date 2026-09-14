@@ -15,6 +15,7 @@
     name: "Age/Sex (Total)",
     filepath: "${age_sex}/${gender}_${age}_${year}.png",
     type: "raster.age_sex", //This needs to be displayed as a population pyramid in tooltips/raster analysis somehow
+    unit: "Total",
     gender: {
       name: "Gender",
       f: {
@@ -33,7 +34,7 @@
     age: {
       name: "Age",
       "00": {
-        name: "0-1yo, Infants"
+        name: "0-1yo"
       },
       "01": {
         name: "1-5yo"
@@ -84,13 +85,14 @@
         name: "75-80yo"
       },
       "80": {
-        name: "80+, Seniors"
+        name: "80+"
       }
     }
   },
   births: {
     name: "Births",
     filepath: "${vitals}/3.crude_births/births_${year}.png",
+    unit: "Total",
     legend: {
       colourscheme: "prgn"
     }
@@ -98,6 +100,7 @@
   deaths: {
     name: "Deaths",
     filepath: "${vitals}/3.${gender}_crude_deaths/${gender}_deaths_{year}.png",
+    unit: "Total",
     variable_selectors: {
       gender: {
         name: "Gender",
@@ -121,6 +124,7 @@
   migration_gender: {
     name: "Migration (Gender)",
     filepath: "${vitals}/4.${gender}_net_migration/${gender}_net_migration_{year}.png",
+    unit: "Total",
     variable_selectors: {
       gender: {
         name: "Gender",
@@ -144,6 +148,7 @@
   net_migration: {
     name: "Net Migration",
     filepath: "${vitals}/4.net_migration/net_migration_${year}.png",
+    unit: "Total",
     legend: {
       colourscheme: "rdylgn"
     }
@@ -151,6 +156,7 @@
   population_density: {
     name: "Population Density (ihb/km^2)",
     filepath: "${stad}/stadester_density_rasters/stadester_density_${year}.png",
+    unit: "ihb/km^2",
     legend: {
       colourscheme: "reds"
     }
@@ -159,6 +165,7 @@
     name: "Population (Total)",
     encoding: "int32",
     filepath: "${stad}/stadester_population_rasters/stadester_population_${year}.png",
+    unit: "Total",
     legend: {
       colourscheme: "viridis"
     }
@@ -167,6 +174,7 @@
     name: "Population (Rural)",
     encoding: "int32",
     filepath: "${stad}/stadester_rural_rasters/stadester_rural_{year}.png",
+    unit: "Rural and periurban population, total",
     legend: {
       colourscheme: "greens"
     }
@@ -175,6 +183,7 @@
     name: "Population (Urban)",
     encoding: "int32",
     filepath: "${stad}/stadester_urban_rasters/stadester_urban_{year}.png",
+    unit: "Urban population, total",
     legend: {
       colourscheme: "blues"
     }

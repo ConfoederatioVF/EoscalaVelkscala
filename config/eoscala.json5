@@ -52,8 +52,9 @@
     }
   },
   labourforce_total: {
-    name: "Labourforce (Total)",
+    name: "Raw Labourforce",
     filepath: "${h2}LFPR_OLS/4.active_labourforce/labourforce_t_${year}.png",
+    unit: "Total",
     legend: {
       colourscheme: "plasma"
     },
@@ -137,6 +138,7 @@
         },
         not_in_work: {
           name: "Not in Work",
+          description: "Unemployment rate within the economically active population (LFPR).",
           discounted: true,
           legend: {
             colourscheme: "rdylgn",
@@ -155,6 +157,7 @@
   professions_total: {
     name: "Professions (Total)",
     filepath: "${prof_per}/${profession}_${gender}_${year}.png",
+    unit: "Total workforce in the selected occupation(s)",
     variable_selectors: { //There should also be an option to enable all variable selectors
       gender: {
         name: "Gender",
@@ -209,7 +212,7 @@
   wealth_income: {
     name: "Wealth/Income",
     filepath: "${h3}/wealth_income/1.${indicator}/${indicator}_${year}.png",
-    unit: "FY$2000 per household",
+    unit: "FY$2000, average household in gridcell",
     variable_selectors: {
       indicator: {
         name: "Indicator",
