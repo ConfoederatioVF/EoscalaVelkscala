@@ -1,6 +1,24 @@
 {
   name: "Stadestér (Cities)",
   root_folders: {
-    
+    l_stad: "D:/Project 1436 - Dataview/data/stadester"
+  },
+  "stadester_1.0": {
+    name: "Stadestér 1.0",
+    type: "vector.points",
+    unit: "Urban Population",
+    filepath: "${l_stad}/stadester_1.0.json",
+    legend: {
+      modes: ["population", "growth", "area", "density", "continent"]
+    }
+  },
+  "stadester_1.1": {
+    name: "Stadestér 1.1",
+    type: "vector.points",
+    unit: "Urban Population",
+    filepath: "${l_stad}/stadester_1.1.json",
+    legend: {
+      modes: ["population", "growth", "area", "density", "continent"]
+    }
   }
 }
