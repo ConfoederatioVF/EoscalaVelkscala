@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebd5f0bb-54b4-45e0-af98-97d56c09f070" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/eoscala.json5" beforeDir="false" afterPath="$PROJECT_DIR$/config/eoscala.json5" afterDir="false" />
     </list>
@@ -144,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1789336162260</updated>
       <workItem from="1789336166681" duration="11559000" />
-      <workItem from="1789436359329" duration="3000" />
+      <workItem from="1789436359329" duration="1208000" />
     </task>
     <servers />
   </component>
