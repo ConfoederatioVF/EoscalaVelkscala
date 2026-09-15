@@ -15,7 +15,8 @@
     unit: "FY$2000",
     filepath: "${h3}GDP_pc/7.scaled_to_national/GDP_${year}.png",
     legend: {
-      colourscheme: "rdylgn"
+      colourscheme: "rdylgn",
+      steepness: 1000
     }
   },
   GDP_nominal_pc: {
@@ -23,7 +24,7 @@
     unit: "FY$2000",
     filepath: "${h3}GDP_pc/8.GDP_nominal_pc_rasters/GDP_pc_${year}.png",
     legend: {
-      colourscheme: "turbo"
+      colourscheme: "turbo",
     }
   },
   GDP_PPP: {
@@ -31,7 +32,8 @@
     unit: "FY$2000",
     filepath: "${h3}GDP_PPP_pc/7.scaled_to_national/GDP_PPP_${year}.png",
     legend: {
-      colourscheme: "rdylgn"
+      colourscheme: "rdylgn",
+      steepness: 1000
     }
   },
   GDP_PPP_pc: {
@@ -156,7 +158,7 @@
   },
   professions_total: {
     name: "Professions (Total)",
-    filepath: "${prof_per}/${profession}_${gender}_${year}.png",
+    filepath: "${prof_tot}/${profession}_${gender}_${year}.png",
     unit: "Total workforce in the selected occupation(s)",
     variable_selectors: { //There should also be an option to enable all variable selectors
       gender: {

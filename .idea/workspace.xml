@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ebd5f0bb-54b4-45e0-af98-97d56c09f070" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/velkscala_landuse.json5" beforeDir="false" afterPath="$PROJECT_DIR$/config/velkscala_landuse.json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/eoscala.json5" beforeDir="false" afterPath="$PROJECT_DIR$/config/eoscala.json5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +25,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000016115135544" />
-      <entry key="S2" value="1.0981673321935974" />
-      <entry key="S5" value="1.9354407186949527" />
-      <entry key="S10" value="3.553835548294183" />
-      <entry key="S30" value="9.243892343973789" />
-      <entry key="S60" value="16.262506895924577" />
-      <entry key="M2" value="28.94942956959258" />
-      <entry key="M5" value="56.3187441415248" />
-      <entry key="M10" value="76.79172934540388" />
-      <entry key="M15" value="86.10150229550055" />
-      <entry key="M30" value="98.9258282492268" />
-      <entry key="H1" value="131.22561908174305" />
-      <entry key="H2" value="216.29137341830472" />
-      <entry key="H4" value="326.4609587288505" />
-      <entry key="D1" value="497.3871362514485" />
-      <entry key="W1" value="537.8580533874424" />
+      <entry key="MS100" value="1.0003476685047847" />
+      <entry key="MS500" value="1.204105146845906" />
+      <entry key="S2" value="1.9472735391672868" />
+      <entry key="S5" value="2.965080084478139" />
+      <entry key="S10" value="3.7389099495414984" />
+      <entry key="S30" value="4.514983141052662" />
+      <entry key="S60" value="5.193913214217309" />
+      <entry key="M2" value="9.686503539490674" />
+      <entry key="M5" value="32.43369118625968" />
+      <entry key="M10" value="58.62086907854893" />
+      <entry key="M15" value="72.77250013921291" />
+      <entry key="M30" value="92.76957496827576" />
+      <entry key="H1" value="128.60674041411232" />
+      <entry key="H2" value="214.92017310040706" />
+      <entry key="H4" value="326.6174028240207" />
+      <entry key="D1" value="501.14964550665405" />
+      <entry key="W1" value="542.6666826389884" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -63,51 +63,51 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9659363289248456" />
-      <entry key="MS500" value="0.9931084989270424" />
-      <entry key="S2" value="1.0962454322812734" />
-      <entry key="S5" value="1.9339315273884023" />
-      <entry key="S10" value="3.5523512838285383" />
-      <entry key="S30" value="9.242516102491646" />
-      <entry key="S60" value="16.261167384337302" />
-      <entry key="M2" value="28.948135449001846" />
-      <entry key="M5" value="56.317701092059075" />
-      <entry key="M10" value="76.79101322087031" />
-      <entry key="M15" value="86.10096590293543" />
-      <entry key="M30" value="98.92551487153027" />
-      <entry key="H1" value="131.22537513003243" />
-      <entry key="H2" value="216.29112455125994" />
-      <entry key="H4" value="326.46075026341015" />
-      <entry key="D1" value="497.3870795591356" />
-      <entry key="W1" value="537.8580445430262" />
+      <entry key="MS100" value="0.9662721545640401" />
+      <entry key="MS500" value="1.1957867922442218" />
+      <entry key="S2" value="1.9438525931111375" />
+      <entry key="S5" value="2.9629650664448914" />
+      <entry key="S10" value="3.7375691193717233" />
+      <entry key="S30" value="4.51444135979308" />
+      <entry key="S60" value="5.19359138937828" />
+      <entry key="M2" value="9.686141995815944" />
+      <entry key="M5" value="32.43312269310351" />
+      <entry key="M10" value="58.62033891247951" />
+      <entry key="M15" value="72.77205786936302" />
+      <entry key="M30" value="92.76928690917369" />
+      <entry key="H1" value="128.60650561627006" />
+      <entry key="H2" value="214.91992905966683" />
+      <entry key="H4" value="326.6171961995451" />
+      <entry key="D1" value="501.1495887467913" />
+      <entry key="W1" value="542.6666737679209" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="3JI6JJjHRZwYjscYSnunvLy6SOV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Project 2135 - Eoscala.Velkscala" />
@@ -143,7 +143,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1789336162260</updated>
-      <workItem from="1789336166681" duration="6910000" />
+      <workItem from="1789336166681" duration="11559000" />
+      <workItem from="1789436359329" duration="3000" />
     </task>
     <servers />
   </component>
