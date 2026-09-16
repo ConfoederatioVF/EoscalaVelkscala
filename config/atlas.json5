@@ -1,0 +1,121 @@
+{
+  name: "Atlas (Historical Borders)",
+  root_folders: {
+    l_atlas: "D:/Project 1436 - Dataview/data/atlas",
+    l_df: "D:/Project 1436 - Dataview/data/atlas/detailed"
+  },
+  "default_basemap": {
+    name: "Default Basemap (No Data)",
+    type: "vector.basemap",
+    unit: "",
+    icon: "map",
+    description: [
+      "### Default Basemap",
+      "Clean geographic basemap without raster overlays, optimised for inspecting settlement distributions and territorial boundaries."
+    ],
+    permissions: [
+      "default"
+    ],
+    hide_colourbar: true
+  },
+  "statistical_borders": {
+    name: "Statistical Borders",
+    description: "Temporally sliced statistical and historical borders from CShapes-2.0 and Svea atlas.naissance.",
+    filepaths: [
+      {
+        path: "${l_atlas}/CShapes-2.0.geojson",
+        type: "vector.geojson",
+        domain: [
+          1886,
+          2026
+        ]
+      },
+      {
+        path: "${l_atlas}/atlas.naissance",
+        type: "vector.naissance",
+        domain: [
+          -3500,
+          1886
+        ]
+      }
+    ]
+  },
+  "detailed_borders": {
+    name: "Detailed Borders",
+    description: "De facto borders from 3500BC to 2025AD.",
+    filepaths: [
+      {
+        path: "${l_df}/0.476.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+          -3500,
+           476
+        ]
+      },
+      {
+        path: "${l_df}/1.1356.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+          476,
+          1356
+        ]
+      },
+      {
+        path: "${l_df}/2.1707.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+           1356,
+           1707
+        ]
+      },
+      {
+        path: "${l_df}/3.1815.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+          1707,
+          1815
+        ]
+      },
+      {
+        path: "${l_df}/4.1914.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+           1815,
+           1914
+        ]
+      },
+      {
+        path: "${l_df}/5.1936.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+           1914,
+           1936
+        ]
+      },
+      {
+        path: "${l_df}/6.1946.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+          1936,
+          1946
+        ]
+      },
+      {
+        path: "${l_df}/7.1991.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+         1946,
+         1991
+        ]
+      },
+      {
+        path: "${l_df}/8.2026.1.1.naissance",
+        type: "vector.naissance",
+        domain: [
+          1991,
+          2026
+        ]
+      }
+    ]
+  }
+}
