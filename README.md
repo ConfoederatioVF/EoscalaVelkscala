@@ -13,6 +13,10 @@
 
 - E-mail: [vf@confoederatio.org](mailto:vf@confoederatio.org)
 
+> [!WARNING]
+> This manuscript is currently being refactored pending a large-scale data release.
+> You can view the data contained in newer versions of Eoscala/Velkscala at [Confoederatio Dataview](https://dataview.confoederatio.org/).
+
 > [!NOTE]
 > De-facto polity extents: [Atlas 0.5 (GeoJSON)](https://confoederatio.org/data/atlas_0.5b.json) | [Atlas 0.5 (Webview)](https://confoederatio.org/pages/dataview). De jure polity extents: [C-Shapes 2.0](https://icr.ethz.ch/data/cshapes/). Daily resolutions and diplomatic relations available from 3500BC-2025AD for community members.<br>
 > City extents, names, and populations are available at [Stadestér 1.0 (JSON/Raster)](https://doi.org/10.5281/zenodo.17180328).
