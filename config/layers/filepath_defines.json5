@@ -1,0 +1,26 @@
+{
+  // =========================================================================
+  // GeoPNG Dataview Filepath Defines & Root Folders (Single Source of Truth)
+  // Edit base server filesystem paths and dataset roots for all common/layers/.
+  // Comments and trailing commas are fully supported.
+  // =========================================================================
+  root_folders: {
+    age_sex: "${h3}/age_sex/4.composite_cohorts/",
+    alcc: "${h2}/population_KK10LUH2/rasters_KK10LUH2/",
+    h1: "${nwm}/histmap/1.data_raw/",
+    h2: "${nwm}/histmap/2.data_cleaning/",
+    h3: "${nwm}/histmap/3.data_transform/",
+    h4: "${nwm}/histmap/4.data_exports/",
+    h5: "${nwm}/histmap/5.data_visualisation/",
+    hyde: "${h2}/landuse_HYDE/rasters/",
+    l_atlas: "D:/Project 1436 - Dataview/data/atlas",
+    l_df: "D:/Project 1436 - Dataview/data/atlas/detailed",
+    l_stad: "D:/Project 1436 - Dataview/data/stadester",
+    nwm: "D:/Project 1509 - SVEA/histmap/",
+    prof_per: "${h3}/professions/3.percentages/",
+    prof_tot: "${h3}/professions/4.aggregates/",
+    stad: "${h2}/population_Stadester/",
+    stad_legacy: "${h1}/population_Stadester_Legacy/",
+    vitals: "${h2}/births_deaths_OLS/",
+  },
+}

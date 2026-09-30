@@ -1,0 +1,36 @@
+{
+  // =========================================================================
+  // Application CSS Color Palettes & UI Tokens (JSON5 format)
+  // Edit values directly in this file. Comments & trailing commas supported.
+  // =========================================================================
+
+  // Core Accent Colors (Red Theme Palette)
+  accentPrimary: "rgb(200, 40, 40)",       // Primary theme red (#c82828)
+  accentSecondary: "rgb(240, 60, 60)",     // Vibrant secondary red (#f03c3c)
+  accentTertiary: "rgba(255, 255, 255, 0.15)", // Subtle translucent white border/divider
+
+  // Background & Neutral Surfaces
+  bgPrimary: "#111113",                    // Main dark workspace background
+  bgSecondary: "#232323",                  // Card, drawer, and flyout panel surface
+  bgMuted: "rgba(255, 255, 255, 0.08)",
+  hoverColour: "rgba(255, 255, 255, 0.3)",
+
+  // Typography Colors
+  textPrimary: "#ffffff",
+  textMuted: "rgba(255, 255, 255, 0.65)",
+
+  // Global Icon & Toggle Rules
+  iconColor: "#ffffff",                    // All icons must be pure white
+  toggleActive: "rgb(60, 150, 60)",                 // Elements toggled on per ui.md
+  toggleInactive: "#6b7280",
+
+  // Secondary Accents, Badges & Preset Buttons (Must strictly be Red, never Orange/Amber)
+  p99Active: "rgb(200, 40, 40)",           // P99 / percentile cutoff active button color (Red)
+  badgeActiveBg: "rgba(200, 40, 40, 0.25)",
+  badgeActiveBorder: "rgba(240, 60, 60, 0.6)",
+  badgeActiveText: "rgb(240, 60, 60)",
+
+  buttonActiveBg: "rgb(200, 40, 40)",
+  buttonActiveText: "#ffffff",
+  buttonActiveBorder: "rgb(240, 60, 60)",
+}

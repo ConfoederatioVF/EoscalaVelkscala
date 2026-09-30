@@ -1,0 +1,113 @@
+{
+  // =========================================================================
+  // GeoPNG Dataview Info Panel Configuration (JSON5 format)
+  // Define tabs, navigation controls, and custom text panels (About, Policy, etc.)
+  // Users can edit existing tabs or add new custom tabs below.
+  // Comments and trailing commas are fully supported.
+  // =========================================================================
+  title: "Information & Controls",
+  defaultTab: "controls",
+  tabs: [
+    {
+      id: "controls",
+      label: "Controls",
+      icon: "tune",
+      type: "controls",
+      title: "Active Modes & Camera Controls",
+      description: "Live summary of active rendering layers, projection state, and 3D camera shortcuts.",
+      shortcutsHeader: "Navigation Shortcuts",
+      shortcuts: [
+        {
+          key: "Ctrl + Drag",
+          action: "Pitch & rotate 3D camera (smooth linear tilt)",
+        },
+        {
+          key: "Right-click Drag",
+          action: "Pitch & rotate 3D camera",
+        },
+        {
+          key: "Left Drag",
+          action: "Pan map view smoothly across all projections",
+        },
+        {
+          key: "Scroll Wheel",
+          action: "Smooth zoom in & out",
+        },
+        {
+          key: "Double Click",
+          action: "Reset camera centre, pitch, and zoom",
+        },
+        {
+          key: "Hover",
+          action: "Inspect pixel coordinates & scalar values",
+        },
+      ],
+    },
+    {
+      id: "about",
+      label: "About",
+      icon: "info",
+      type: "content",
+      markdown: [
+        {
+          title: "Overview",
+          content: [
+            "> [!WARNING]",
+            "> Confoederatio Dataview is currently a **work-in-progress**.",
+            "This means that you may see placeholder text, misalignment issues, and features that may not display as intended.",
+            "",
+            "We advise you to not share this URL currently if you have access to it, or to advertise it publicly. Not that we would break your kneecaps, but the website might not always be online in such cases."
+          ],
+        },
+        {
+          title: "Data Caveats",
+          open: false,
+          content: [
+            "Complex multi-raster calculations are downsampled to `1080x540` for performance reasons.",
+            "",
+            "There are some known issues with NWM2 data we are currently working on.",
+            "- Urban rasters and GHS-POP (which provides backcalculation for certain low-pop areas from 1800AD-1975AD) are offset 2px too far south.",
+            "- Areas with a pop. density <0,5ihb/5-arcmin^2 are not currently shown.",
+            "- Certain issues with multinomial logit distributions:",
+            "  - Population pyramids are currently overly stochastic between adjacent age/sex bands.",
+            "  - Professions are overly equalised between spatiotemporal domains.",
+            "  - These issues have to do with the effect of how multinomial logit is presently implemented, as well as correction/constraint stages after training.",
+            "- Not in work should be calculated as workforce-aged cohorts minus LFPR, but is currently flawed/corrupted.",
+            "- Other known data caveats are shown in their respective mapmode descriptions.",
+            "",
+            "If you encounter any issues not documented here, please contact us at [Confoederatio Element](https://element.confoederatio.org)."
+          ]
+        },
+        {
+          title: "Era Classification",
+          open: false,
+          content: [
+            "Traditionally, Confoederatio classifies historical time periods into 5 distinct periods for data coverage and statistical purposes. These eras can be viewed in `Date Picker > Bookmarks`, and typically represent common bookends that that were associated with global/macroregional climatic transitions.",
+            "1. Era: (10000BC-476AD): Holocene | End of Last Glacial Maximum",
+            "2. Era (476AD-1356AD): Traditional end of W. Rome, Gupta contraction | Roman Warm Period-LALIA Transition (Midpoint)",
+            "3. Era (1356AD-1815AD): Golden Bull of 1356, Black Death, Red Turbans, Renaissance | End of Mediaeval Warm Period",
+            "4. Era (1815AD-1991AD): Concert of Europe, New Imperialism | Industrial Revolution",
+            "5. Era (1991AD-): End of the Cold War, Globalisation | End of Widespread Nuclear Testing",
+            "In later periods (4. Era and after), climatic transitions tend to be caused by human activity, rather than climate influencing human behaviour. Still, influence cannot be taken as determinism: only with the weight of surrounding human events did they make sense as historical periodisations.",
+            "",
+            "AD/BC is used for fixed width purposes."
+          ]
+        }
+      ],
+    },
+    {
+      id: "policy",
+      label: "Policy",
+      icon: "gavel",
+      type: "content",
+      markdown: [
+        {
+          title: "Otherwise, we have no policy!",
+          content: [
+            "We're not big corpo."
+          ],
+        }
+      ],
+    },
+  ],
+}

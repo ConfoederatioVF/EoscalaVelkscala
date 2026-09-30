@@ -1,0 +1,17 @@
+{
+    name: "Default",
+    "default_basemap": {
+        name: "Default",
+        type: "vector.basemap",
+        unit: "",
+        icon: "map",
+        description: [
+            "### Default View",
+            "Displays the basemap without underlying raster data."
+        ],
+        permissions: [
+            "default"
+        ],
+        hide_colourbar: true
+    }
+}

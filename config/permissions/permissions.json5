@@ -1,0 +1,49 @@
+{
+  // =========================================================================
+  // Confoederatio Dataview Permissions Configuration (JSON5 format)
+  // Edit role definitions, access tiers, and Discord verification parameters.
+  // =========================================================================
+  roles: {
+    developer: {
+      id: "developer",
+      name: "Developers",
+      description: "Full administrative and backend access, including video exports.",
+      features: [
+        "video_export",
+        "privileged_layers",
+        "raw_export",
+        "all_layers"
+      ],
+      allowed_layers: ["*"]
+    },
+    privileged: {
+      id: "privileged",
+      name: "Privileged",
+      description: "Access to privileged and sensitive internal research data layers.",
+      features: [
+        "privileged_layers",
+        "timeline_scrubbing"
+      ],
+      discord: {
+        channel_id: "123456789012345678",
+        role_ids: ["987654321098765432"]
+      },
+      allowed_layers: ["*"]
+    },
+    default: {
+      id: "default",
+      name: "Default",
+      description: "Open access to all default historical GIS data layers.",
+      features: [
+        "view_default_layers",
+        "timeline_scrubbing"
+      ],
+      allowed_layers: ["default"]
+    }
+  },
+  default_role: "default",
+  is_public_build: true,
+  allowed_roles_in_public: [
+    "default"
+  ]
+}

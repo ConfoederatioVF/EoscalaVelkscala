@@ -1,0 +1,44 @@
+{
+    name: "Stadestér (Cities)",
+    "stadester": {
+        name: "Cities/Settlements",
+        type: "vector.points",
+        unit: "Urban Population",
+        icon: "location_city",
+        description: [
+            "### Stadestér Settlements",
+            "A global historical database of 34,400+ cities and urban settlements from 3300BC to the present."
+        ],
+        filepath: "${l_stad}/stadester_1.1.json",
+        permissions: [
+            "default"
+        ],
+        display_options: {
+            bubble_size: 0.4,
+            color_mode: "growth",
+            dataset: "stadester_1.1",
+            filled: true,
+            growth_palette: "Rainbow",
+            halo: false,
+            label_collision: true,
+            max_cities: 4000,
+            min_pop: 0.01,
+            opacity: 0.7,
+            prefer_least_diacritics: true,
+            show_labels: true,
+            skip_unknown_unicode: true,
+            strip_parentheses: true
+        },
+        legend: {
+            colourscheme: "Plasma",
+            type: "pseudo-log",
+            modes: [
+                "population",
+                "growth",
+                "area",
+                "density",
+                "region"
+            ]
+        }
+    }
+}
